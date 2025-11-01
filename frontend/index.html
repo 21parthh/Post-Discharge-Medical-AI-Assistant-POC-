@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Post-Discharge AI Assistant 💬</title>
+        <style>
+            body {
+                font-family: "Segoe UI", sans-serif;
+                background: #f4f6f8;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 30px;
+            }
+
+            h1 {
+                color: #2d3436;
+            }
+
+            #chat-box {
+                width: 450px;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin-top: 20px;
+                overflow-y: auto;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .message {
+                margin: 8px 0;
+                padding: 10px 12px;
+                border-radius: 8px;
+                max-width: 80%;
+            }
+
+            .user {
+                background: #d1e7ff;
+                align-self: flex-end;
+            }
+
+            .agent {
+                background: #e9ecef;
+                align-self: flex-start;
+            }
+
+            #input-section {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 450px;
+            }
+
+            input,
+            button {
+                padding: 10px;
+                font-size: 16px;
+                margin: 5px 0;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                width: 100%;
+            }
+
+            button {
+                background: #0078ff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+            button:hover {
+                background: #005fcc;
+            }
+
+            #patient-info {
+                margin-top: 10px;
+                font-size: 15px;
+                color: #2d3436;
+                background: #dff9fb;
+                padding: 10px;
+                border-radius: 8px;
+                width: 450px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🏥 Post-Discharge AI Assistant</h1>
+
+        <div id="patient-info"></div>
+        <div id="chat-box"></div>
+
+        <div id="input-section">
+            <input type="text" id="name" placeholder="Enter your name..." />
+            <button id="fetch-btn">Fetch Patient Info</button>
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Enter your message..."
+                disabled
+            />
+            <button id="send-btn" disabled>Send Message</button>
+        </div>
+
+        <script>
+            const apiBase = "http://127.0.0.1:8000";
+            const nameInput = document.getElementById("name");
+            const messageInput = document.getElementById("message");
+            const fetchBtn = document.getElementById("fetch-btn");
+            const sendBtn = document.getElementById("send-btn");
+            const chatBox = document.getElementById("chat-box");
+            const patientInfo = document.getElementById("patient-info");
+
+            let currentName = null;
+
+            // -------------------------------
+            // STEP 1: Fetch patient data
+            // -------------------------------
+            fetchBtn.addEventListener("click", async () => {
+                const name = nameInput.value.trim();
+                if (!name) return alert("Please enter a patient name.");
+
+                chatBox.innerHTML = "";
+                appendMessage("System", "🔍 Fetching patient data...", "agent");
+
+                try {
+                    const res = await fetch(
+                        `${apiBase}/chat?name=${encodeURIComponent(name)}`
+                    );
+                    if (!res.ok)
+                        throw new Error(`Server returned ${res.status}`);
+                    const data = await res.json();
+                    console.log("GET /chat response:", data);
+
+                    chatBox.innerHTML = ""; // clear any temporary message
+
+                    if (data.patient) {
+                        currentName = name;
+
+                        // ---- Neatly show patient info ----
+                        patientInfo.style.display = "block";
+                        patientInfo.innerHTML = `
+          <b>👤 Patient:</b> ${data.patient.name || "N/A"}<br/>
+          <b>🩺 Condition:</b> ${data.patient.condition || "N/A"}<br/>
+          <b>💊 Diagnosis:</b> ${data.patient.primary_diagnosis || "N/A"}<br/>
+          <b>📅 Discharge Date:</b> ${data.patient.discharge_date || "N/A"}
+        `;
+
+                        // ---- Display greeting message properly ----
+                        appendMessage(
+                            data.role
+                                ? data.role.replace("_", " ")
+                                : "Receptionist",
+                            data.response ||
+                                "Hello! How can I assist you today?",
+                            "agent"
+                        );
+
+                        // ---- Enable chat inputs ----
+                        messageInput.disabled = false;
+                        sendBtn.disabled = false;
+                        nameInput.disabled = true;
+                        fetchBtn.disabled = true;
+                    } else {
+                        appendMessage(
+                            "Receptionist",
+                            data.response || "❌ No record found.",
+                            "agent"
+                        );
+                    }
+                } catch (err) {
+                    console.error("Fetch error:", err);
+                    appendMessage(
+                        "System",
+                        `⚠️ Error fetching patient info: ${err.message}`,
+                        "agent"
+                    );
+                }
+            });
+
+            // -------------------------------
+            // STEP 2: Send chat message
+            // -------------------------------
+            sendBtn.addEventListener("click", async () => {
+                const msg = messageInput.value.trim();
+                if (!msg || !currentName) return;
+
+                appendMessage("You", msg, "user");
+                messageInput.value = "";
+
+                try {
+                    const res = await fetch(`${apiBase}/chat`, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            patient_name: currentName,
+                            message: msg,
+                        }),
+                    });
+
+                    const data = await res.json();
+                    appendMessage(
+                        data.role ? data.role.replace("_", " ") : "Agent",
+                        data.response || "No response received.",
+                        "agent"
+                    );
+                } catch (err) {
+                    appendMessage(
+                        "System",
+                        `⚠️ Error: ${err.message}`,
+                        "agent"
+                    );
+                }
+            });
+
+            // -------------------------------
+            // Helper: Add message to chat
+            // -------------------------------
+            function appendMessage(sender, text, cls) {
+                const msg = document.createElement("div");
+                msg.classList.add("message", cls);
+                msg.innerHTML = `<strong>${sender}:</strong><br>${text}`;
+                chatBox.appendChild(msg);
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        </script>
+    </body>
+</html>

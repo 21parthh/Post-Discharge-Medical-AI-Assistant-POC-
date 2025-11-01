@@ -1,0 +1,405 @@
+[2025-10-31 22:08:29] [PatientDB] ✅ Retrieved record for John Smith
+[2025-10-31 22:08:29] [ReceptionistAgent] Fetched patient data for John Smith
+[2025-10-31 22:12:35] [ClinicalAgent] Received medical query: I'm having swelling in my legs. Should I be worried?
+[2025-10-31 22:15:34] [ClinicalAgent] Received medical query: I'm having swelling in my legs. Should I be worried?
+[2025-10-31 22:15:34] [ClinicalAgent] Error: name 'model' is not defined
+[2025-10-31 22:17:49] [ClinicalAgent] Received medical query: I'm having swelling in my legs. Should I be worried?"
+[2025-10-31 22:22:41] [System] 🧠 Orchestrator initialized.
+[2025-10-31 22:22:46] [System] Patient identified: John Smith
+[2025-10-31 22:22:46] [PatientDB] ✅ Retrieved record for John Smith
+[2025-10-31 22:22:46] [ReceptionistAgent] Fetched patient data for John Smith
+[2025-10-31 22:22:58] [System] Detected intent: medical
+[2025-10-31 22:22:58] [System] Routing to Clinical Agent.
+[2025-10-31 22:22:58] [ClinicalAgent] Received medical query: I'm having swelling in my legs
+[2025-10-31 22:23:35] [System] Detected intent: general
+[2025-10-31 22:23:35] [System] Receptionist handled general query.
+[2025-10-31 22:23:40] [System] Detected intent: general
+[2025-10-31 22:23:40] [System] Receptionist handled general query.
+[2025-10-31 22:23:55] [System] Detected intent: medical
+[2025-10-31 22:23:55] [System] Routing to Clinical Agent.
+[2025-10-31 22:23:55] [ClinicalAgent] Received medical query: I have a pain in kidney
+[2025-10-31 22:25:21] [System] Detected intent: medical
+[2025-10-31 22:25:21] [System] Routing to Clinical Agent.
+[2025-10-31 22:25:21] [ClinicalAgent] Received medical query: i have pain in kidney
+[2025-10-31 22:25:49] [System] 🧠 Orchestrator initialized.
+[2025-10-31 22:25:55] [System] Patient identified: John Sith
+[2025-10-31 22:26:18] [System] 🧠 Orchestrator initialized.
+[2025-10-31 22:26:25] [System] Patient identified: John Smith
+[2025-10-31 22:26:25] [PatientDB] ✅ Retrieved record for John Smith
+[2025-10-31 22:26:25] [ReceptionistAgent] Fetched patient data for John Smith
+[2025-10-31 22:26:33] [System] Detected intent: medical
+[2025-10-31 22:26:33] [System] Routing to Clinical Agent.
+[2025-10-31 22:26:33] [ClinicalAgent] Received medical query: I have a pain in kidney
+[2025-10-31 22:27:09] [System] Detected intent: general
+[2025-10-31 22:27:09] [System] Receptionist handled general query.
+[2025-10-31 22:27:21] [System] Detected intent: medical
+[2025-10-31 22:27:21] [System] Routing to Clinical Agent.
+[2025-10-31 22:27:21] [ClinicalAgent] Received medical query: i have a pain in heart
+[2025-10-31 23:55:22] [System] 🧠 Orchestrator initialized.
+[2025-10-31 23:55:27] [System] Patient identified: John Smith
+[2025-10-31 23:55:27] [PatientDB] ✅ Retrieved record for John Smith
+[2025-10-31 23:55:27] [ReceptionistAgent] Fetched patient data for John Smith
+[2025-10-31 23:55:38] [System] Detected intent: medical
+[2025-10-31 23:55:38] [System] Routing to Clinical Agent.
+[2025-10-31 23:55:38] [ClinicalAgent] Received medical query: I have mild swelling around my ankles, what could it mean?
+[2025-10-31 23:55:38] [ClinicalAgent] Error: name 'embedding_model' is not defined
+[2025-10-31 23:56:59] [System] 🧠 Orchestrator initialized.
+[2025-10-31 23:57:07] [System] Patient identified: John Smith
+[2025-10-31 23:57:07] [PatientDB] ✅ Retrieved record for John Smith
+[2025-10-31 23:57:07] [ReceptionistAgent] Fetched patient data for John Smith
+[2025-10-31 23:57:18] [System] Detected intent: medical
+[2025-10-31 23:57:18] [System] Routing to Clinical Agent.
+[2025-10-31 23:57:18] [ClinicalAgent] Received medical query: I have mild swelling around my ankles, what could it mean?
+[2025-10-31 23:57:18] [ClinicalAgent] Error: name 'embedding_model' is not defined
+[2025-10-31 23:58:51] [System] 🧠 Orchestrator initialized.
+[2025-10-31 23:58:55] [System] Patient identified: John Smith
+[2025-10-31 23:58:55] [PatientDB] ✅ Retrieved record for John Smith
+[2025-10-31 23:58:55] [ReceptionistAgent] Fetched patient data for John Smith
+[2025-10-31 23:59:10] [System] Detected intent: medical
+[2025-10-31 23:59:10] [System] Routing to Clinical Agent.
+[2025-10-31 23:59:10] [ClinicalAgent] Received medical query: I have mild swelling around my ankles, what could it mean?
+[2025-10-31 23:59:10] [ClinicalAgent] Error: name 'chunk_data' is not defined
+[2025-11-01 00:00:32] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:00:43] [System] Patient identified: John Smith
+[2025-11-01 00:00:43] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 00:00:43] [ReceptionistAgent] Fetched patient data for John Smith
+[2025-11-01 00:00:51] [System] Detected intent: medical
+[2025-11-01 00:00:51] [System] Routing to Clinical Agent.
+[2025-11-01 00:00:51] [ClinicalAgent] Received medical query: I have mild swelling around my ankles, what could it mean?
+[2025-11-01 00:01:18] [System] Detected intent: medical
+[2025-11-01 00:01:18] [System] Routing to Clinical Agent.
+[2025-11-01 00:01:18] [ClinicalAgent] Received medical query: What's the latest research on SGLT2 inhibitors for kidney
+[2025-11-01 00:01:44] [System] Detected intent: general
+[2025-11-01 00:01:44] [System] Receptionist handled general query.
+[2025-11-01 00:01:54] [System] Detected intent: general
+[2025-11-01 00:01:54] [System] Receptionist handled general query.
+[2025-11-01 00:02:08] [System] Detected intent: general
+[2025-11-01 00:02:08] [System] Receptionist handled general query.
+[2025-11-01 00:02:39] [System] Detected intent: general
+[2025-11-01 00:02:39] [System] Receptionist handled general query.
+[2025-11-01 00:02:55] [System] Detected intent: general
+[2025-11-01 00:02:55] [System] Receptionist handled general query.
+[2025-11-01 00:03:01] [System] Detected intent: medical
+[2025-11-01 00:03:01] [System] Routing to Clinical Agent.
+[2025-11-01 00:03:01] [ClinicalAgent] Received medical query: Explain how gene therapy is being used in kidney regeneration.
+[2025-11-01 00:06:02] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:06:10] [System] Patient identified: John Smith
+[2025-11-01 00:06:10] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 00:06:10] [ReceptionistAgent] Fetched patient data for John Smith
+[2025-11-01 00:06:19] [System] Detected intent: medical
+[2025-11-01 00:06:19] [System] Routing to Clinical Agent.
+[2025-11-01 00:06:19] [ClinicalAgent] Received medical query: What's the latest research on SGLT2 inhibitors for kidney
+[2025-11-01 00:06:38] [System] Detected intent: medical
+[2025-11-01 00:06:38] [System] Routing to Clinical Agent.
+[2025-11-01 00:06:38] [ClinicalAgent] Received medical query: What's the latest research on SGLT2 inhibitors for kidney
+[2025-11-01 00:06:48] [System] Detected intent: medical
+[2025-11-01 00:06:48] [System] Routing to Clinical Agent.
+[2025-11-01 00:06:48] [ClinicalAgent] Received medical query: What's the latest research on SGLT2 inhibitors for kidney
+[2025-11-01 00:07:08] [System] Detected intent: general
+[2025-11-01 00:07:08] [System] Receptionist handled general query.
+[2025-11-01 00:07:32] [System] Detected intent: general
+[2025-11-01 00:07:32] [System] Receptionist handled general query.
+[2025-11-01 00:07:53] [System] Detected intent: general
+[2025-11-01 00:07:53] [System] Receptionist handled general query.
+[2025-11-01 00:17:43] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:17:47] [System] Patient identified: John Smith
+[2025-11-01 00:18:40] [System] Detected intent: medical
+[2025-11-01 00:18:40] [System] Routing to Clinical Agent.
+[2025-11-01 00:18:40] [ClinicalAgent] Received medical query: I have swelling in my legs
+[2025-11-01 00:18:40] [ClinicalAgent] Using web search fallback.
+[2025-11-01 00:18:42] [ClinicalAgent] Error: string indices must be integers, not 'str'
+[2025-11-01 00:19:59] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:20:06] [System] Patient identified: John Smith
+[2025-11-01 00:20:12] [System] Detected intent: medical
+[2025-11-01 00:20:12] [System] Routing to Clinical Agent.
+[2025-11-01 00:20:12] [ClinicalAgent] Received medical query: I have swelling in my legs
+[2025-11-01 00:20:12] [ClinicalAgent] Using web search fallback.
+[2025-11-01 00:20:13] [ClinicalAgent] Error: string indices must be integers, not 'str'
+[2025-11-01 00:21:10] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:21:19] [System] Patient identified: John Smith
+[2025-11-01 00:21:30] [System] Detected intent: medical
+[2025-11-01 00:21:30] [System] Routing to Clinical Agent.
+[2025-11-01 00:21:30] [ClinicalAgent] Received medical query: I have swelling in my legs
+[2025-11-01 00:22:03] [System] Detected intent: web
+[2025-11-01 00:22:03] [System] Routing to Web Search Agent.
+[2025-11-01 00:22:53] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:22:58] [System] Patient identified: John Smith
+[2025-11-01 00:23:01] [System] Detected intent: web
+[2025-11-01 00:23:01] [System] Routing to Web Search Agent.
+[2025-11-01 00:23:01] [WebSearchAgent] Fetching web data for: Whats the latest research on SGLT2 inhibitors?
+[2025-11-01 00:23:01] [WebSearchAgent] No relevant web data found.
+[2025-11-01 00:24:39] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:24:43] [System] Patient identified: John Smith
+[2025-11-01 00:24:43] [System] Detected intent: web
+[2025-11-01 00:24:43] [System] Routing to Web Search Agent.
+[2025-11-01 00:24:43] [WebSearchAgent] Fetching web data for: What's the latest research on SGLT2 inhibitors for kidney disease?
+[2025-11-01 00:24:45] [WebSearchAgent] No relevant web data found.
+[2025-11-01 00:25:01] [System] Detected intent: general
+[2025-11-01 00:25:01] [System] Receptionist handled general query.
+[2025-11-01 00:25:14] [System] Detected intent: medical
+[2025-11-01 00:25:14] [System] Routing to Clinical Agent.
+[2025-11-01 00:25:14] [ClinicalAgent] Received medical query: I'm having swelling in my legs. Should I be worried?
+[2025-11-01 00:25:25] [System] Detected intent: web
+[2025-11-01 00:25:25] [System] Routing to Web Search Agent.
+[2025-11-01 00:25:25] [WebSearchAgent] Fetching web data for: What's the latest research on SGLT2 inhibitors for kidney disease?
+[2025-11-01 00:25:27] [WebSearchAgent] No relevant web data found.
+[2025-11-01 00:26:12] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:26:18] [System] Patient identified: John Smith
+[2025-11-01 00:26:24] [System] Detected intent: web
+[2025-11-01 00:26:24] [System] Routing to Web Search Agent.
+[2025-11-01 00:26:24] [WebSearchAgent] Fetching web data for: SGLT2 inhibitors for kidney disease?
+[2025-11-01 00:26:26] [WebSearchAgent] No relevant web data found.
+[2025-11-01 00:26:32] [System] Detected intent: general
+[2025-11-01 00:26:32] [System] Receptionist handled general query.
+[2025-11-01 00:26:41] [System] Detected intent: medical
+[2025-11-01 00:26:41] [System] Routing to Clinical Agent.
+[2025-11-01 00:26:41] [ClinicalAgent] Received medical query: Are there new treatments for chronic kidney disease?
+[2025-11-01 00:30:02] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:30:06] [System] Patient identified: John Smith
+[2025-11-01 00:30:07] [System] Detected intent: web
+[2025-11-01 00:30:07] [System] Routing to Web Search Agent.
+[2025-11-01 00:30:07] [WebSearchAgent] Fetching web data for: What's the latest research on SGLT2 inhibitors for kidney disease?
+[2025-11-01 00:31:02] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:31:11] [System] Patient identified: John Smith
+[2025-11-01 00:31:12] [System] Detected intent: web
+[2025-11-01 00:31:12] [System] Routing to Web Search Agent.
+[2025-11-01 00:31:12] [WebSearchAgent] Fetching web data for: What's the latest research on SGLT2 inhibitors for kidney disease?
+[2025-11-01 00:31:13] [WebSearchAgent] No English results found.
+[2025-11-01 00:33:14] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:33:20] [System] Patient identified: John Smith
+[2025-11-01 00:33:22] [System] Detected intent: web
+[2025-11-01 00:33:22] [System] Routing to Web Search Agent.
+[2025-11-01 00:33:22] [WebSearchAgent] Fetching web data for: What's the latest research on SGLT2 inhibitors for kidney disease?
+[2025-11-01 00:33:22] [WebSearchAgent] No English results found.
+[2025-11-01 00:34:07] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:34:12] [System] Patient identified: John Smith
+[2025-11-01 00:34:13] [System] Detected intent: web
+[2025-11-01 00:34:13] [System] Routing to Web Search Agent.
+[2025-11-01 00:34:13] [WebSearchAgent] Fetching web data for: What's the latest research on SGLT2 inhibitors for kidney disease?
+[2025-11-01 00:34:13] [WebSearchAgent] No relevant web data found.
+[2025-11-01 00:36:11] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:36:15] [System] Patient identified: John SMith
+[2025-11-01 00:36:17] [System] Detected intent: web
+[2025-11-01 00:36:17] [System] Routing to Web Search Agent.
+[2025-11-01 00:36:55] [System] 🧠 Orchestrator initialized.
+[2025-11-01 00:36:58] [System] Patient identified: John SMith
+[2025-11-01 00:37:00] [System] Detected intent: medical
+[2025-11-01 00:37:00] [System] Routing to Clinical Agent.
+[2025-11-01 00:37:00] [ClinicalAgent] Received medical query: I'm having swelling in my legs. Should I be worried?
+[2025-11-01 10:41:23] [System] 🧠 Orchestrator initialized.
+[2025-11-01 10:41:31] [System] Patient identified: John Smith
+[2025-11-01 10:41:35] [System] Detected intent: medical
+[2025-11-01 10:41:35] [System] Routing to Clinical Agent.
+[2025-11-01 10:41:35] [ClinicalAgent] Received medical query: I have swelling in my legs
+[2025-11-01 10:42:00] [System] Detected intent: web
+[2025-11-01 10:42:00] [System] Routing to Web Search Agent.
+[2025-11-01 10:42:19] [System] Detected intent: general
+[2025-11-01 10:42:19] [System] Receptionist handled general query.
+[2025-11-01 10:53:09] [Orchestrator] Detected intent: general
+[2025-11-01 10:53:45] [Orchestrator] Detected intent: medical
+[2025-11-01 10:53:45] [ClinicalAgent] Received medical query: I have a kidney failure
+[2025-11-01 11:09:05] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:09:05] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:09:19] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:09:19] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:17:31] [System] Received: patient_name=None message='John SMith'
+[2025-11-01 11:17:31] [Reception] Requesting patient name
+[2025-11-01 11:19:52] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:19:52] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:21:36] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:21:36] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:22:25] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:22:25] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:25:29] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:25:29] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:25:43] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:25:43] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:26:28] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:26:28] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:27:04] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:27:04] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:28:48] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:28:48] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:29:15] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:29:15] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:31:11] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:31:11] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:31:51] [System] Received: patient_name='John Smith' message='I have a swelling in my legs'
+[2025-11-01 11:31:51] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:31:51] [Orchestrator] Detected intent: general
+[2025-11-01 11:32:06] [System] Received: patient_name='John Smith' message='I have kidney disease'
+[2025-11-01 11:32:06] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:32:06] [Orchestrator] Detected intent: medical
+[2025-11-01 11:32:06] [ClinicalAgent] Received medical query: I have kidney disease
+[2025-11-01 11:38:57] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:38:57] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:39:09] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:39:09] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:39:33] [System] Received: patient_name='John Smith' message='Latest treatrment on KidneChronic Diseae'
+[2025-11-01 11:39:33] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:39:33] [Orchestrator] Detected intent: web
+[2025-11-01 11:45:39] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 11:45:39] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:45:48] [System] Received: patient_name='John Smith' message='okay'
+[2025-11-01 11:45:48] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 11:45:48] [Orchestrator] Detected intent: general
+[2025-11-01 12:12:51] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 12:12:51] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:13:15] [System] Received: patient_name='John Smith' message='What is kidney failure'
+[2025-11-01 12:13:15] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:13:15] [Orchestrator] Detected intent: medical
+[2025-11-01 12:13:15] [ClinicalAgent] Received medical query: What is kidney failure
+[2025-11-01 12:13:41] [System] Received: patient_name='John Smith' message='latest data of kiney treatments'
+[2025-11-01 12:13:41] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:13:41] [Orchestrator] Detected intent: web
+[2025-11-01 12:14:37] [System] Received: patient_name='John Smith' message='latest data of kidney treatments'
+[2025-11-01 12:14:37] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:14:37] [Orchestrator] Detected intent: web
+[2025-11-01 12:16:58] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 12:16:58] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:17:14] [System] Received: patient_name='John Smith' message='Latest Treatment of kidney diseases'
+[2025-11-01 12:17:14] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:17:14] [Orchestrator] Detected intent: web
+[2025-11-01 12:17:37] [System] Received: patient_name='John Smith' message='What is ckd'
+[2025-11-01 12:17:37] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:17:37] [Orchestrator] Detected intent: general
+[2025-11-01 12:17:46] [System] Received: patient_name='John Smith' message='i have swelling in legs'
+[2025-11-01 12:17:46] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:17:46] [Orchestrator] Detected intent: general
+[2025-11-01 12:18:06] [System] Received: patient_name='John Smith' message="I'm having swelling in my legs. Should I be worried?"
+[2025-11-01 12:18:06] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:18:06] [Orchestrator] Detected intent: general
+[2025-11-01 12:19:38] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 12:19:38] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:19:53] [System] Received: patient_name='John Smith' message='I have a dizziness'
+[2025-11-01 12:19:53] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:19:53] [Orchestrator] Detected intent: general
+[2025-11-01 12:19:58] [System] Received: patient_name='John Smith' message='yes'
+[2025-11-01 12:19:58] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:19:58] [Orchestrator] Detected intent: general
+[2025-11-01 12:20:29] [System] Received: patient_name='John Smith' message='i have a pain in kidney'
+[2025-11-01 12:20:29] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:20:29] [Orchestrator] Detected intent: medical
+[2025-11-01 12:20:29] [ClinicalAgent] Received medical query: i have a pain in kidney
+[2025-11-01 12:22:06] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 12:22:06] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:22:20] [System] Received: patient_name='John Smith' message='i have a pain in my kidney'
+[2025-11-01 12:22:20] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:22:20] [Orchestrator] Detected intent: medical
+[2025-11-01 12:22:20] [ClinicalAgent] Received medical query: i have a pain in my kidney
+[2025-11-01 12:29:05] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 12:29:05] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:29:16] [System] Received: patient_name='John Smith' message='I have a pain in kidney'
+[2025-11-01 12:29:16] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:29:16] [Orchestrator] Detected intent: medical
+[2025-11-01 12:29:16] [ClinicalAgent] Received medical query: I have a pain in kidney
+[2025-11-01 12:31:50] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 12:31:50] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:32:24] [System] Received: patient_name='John Smith' message='i have a pain in kidney'
+[2025-11-01 12:32:24] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:32:24] [Orchestrator] Detected intent: medical
+[2025-11-01 12:32:24] [ClinicalAgent] Received medical query: i have a pain in kidney
+[2025-11-01 12:33:52] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 12:33:52] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:34:05] [System] Received: patient_name='John Smith' message='i have a pain in kidney'
+[2025-11-01 12:34:05] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:34:05] [Orchestrator] Detected intent: medical
+[2025-11-01 12:34:05] [ClinicalAgent] Received medical query: i have a pain in kidney
+[2025-11-01 12:34:47] [System] Received: patient_name='John Smith' message='latest kidney treatment in 2025'
+[2025-11-01 12:34:47] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:34:47] [Orchestrator] Detected intent: web
+[2025-11-01 12:35:15] [System] Received: patient_name='John Smith' message='latest treatment on kidney disease'
+[2025-11-01 12:35:15] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:35:15] [Orchestrator] Detected intent: web
+[2025-11-01 12:35:51] [System] Received: patient_name='John Smith' message='How are you'
+[2025-11-01 12:35:51] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 12:35:51] [Orchestrator] Detected intent: general
+[2025-11-01 13:08:18] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 13:08:18] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:08:29] [System] Received: patient_name='John Smith' message='I have a pain in kidney'
+[2025-11-01 13:08:29] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:08:29] [Orchestrator] Detected intent: medical
+[2025-11-01 13:10:47] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 13:10:47] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:10:59] [System] Received: patient_name='John Smith' message='I have a pain in kidney'
+[2025-11-01 13:10:59] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:10:59] [Orchestrator] Detected intent: medical
+[2025-11-01 13:13:39] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 13:13:39] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:13:42] [System] Received: patient_name='John Smith' message='hi'
+[2025-11-01 13:13:42] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:13:42] [Orchestrator] Detected intent: general
+[2025-11-01 13:13:42] [ReceptionistAgent] Responded to the patient: hi
+[2025-11-01 13:14:31] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 13:14:31] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:14:33] [System] Received: patient_name='John Smith' message='hi'
+[2025-11-01 13:14:33] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:14:33] [Orchestrator] Detected intent: general
+[2025-11-01 13:14:41] [ReceptionistAgent] Responded to the patient: hi
+[2025-11-01 13:15:09] [System] Received: patient_name='John Smith' message='latest trends of kidney pain'
+[2025-11-01 13:15:09] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:15:09] [Orchestrator] Detected intent: web
+[2025-11-01 13:33:11] [System] Received: patient_name='John Smith' message='How are you doing\\'
+[2025-11-01 13:33:11] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:33:11] [Orchestrator] Detected intent: general
+[2025-11-01 13:33:17] [ReceptionistAgent] Responded to the patient: How are you doing\
+[2025-11-01 13:35:21] [System] Received: patient_name='John Smith' message='i have swelling in my legs'
+[2025-11-01 13:35:21] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:35:21] [Orchestrator] Detected intent: general
+[2025-11-01 13:35:26] [ReceptionistAgent] Responded to the patient: i have swelling in my legs
+[2025-11-01 13:36:04] [System] Received: patient_name='John Smith' message='i have a pain in my kidney'
+[2025-11-01 13:36:04] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:36:04] [Orchestrator] Detected intent: medical
+[2025-11-01 13:39:18] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 13:39:18] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:39:32] [System] Received: patient_name='John Smith' message='I have swelling and pain in my legs'
+[2025-11-01 13:39:32] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:39:32] [Orchestrator] Detected intent: medical
+[2025-11-01 13:40:34] [System] Received: patient_name='John Smith' message='i have a pain in my kidney suggest me a medications\n'
+[2025-11-01 13:40:34] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 13:40:34] [Orchestrator] Detected intent: medical
+[2025-11-01 15:20:11] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 15:20:11] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:20:27] [System] Received: patient_name='John Smith' message='I Have a swelling in my legs'
+[2025-11-01 15:20:27] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:20:27] [Orchestrator] Detected intent: general
+[2025-11-01 15:20:34] [ReceptionistAgent] Responded to the patient: I Have a swelling in my legs
+[2025-11-01 15:21:03] [System] Received: patient_name='John Smith' message='I Have a pain in my kidney'
+[2025-11-01 15:21:03] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:21:03] [Orchestrator] Detected intent: medical
+[2025-11-01 15:21:30] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 15:21:30] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:21:44] [System] Received: patient_name='John Smith' message='latest research on chronic kidney disease'
+[2025-11-01 15:21:44] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:21:44] [Orchestrator] Detected intent: web
+[2025-11-01 15:42:23] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 15:42:23] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:42:48] [System] Received: patient_name='John Smith' message='Hey how are you'
+[2025-11-01 15:42:48] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:42:48] [Orchestrator] Detected intent: general
+[2025-11-01 15:42:54] [ReceptionistAgent] Responded to the patient: Hey how are you
+[2025-11-01 15:43:20] [System] Received: patient_name='John Smith' message='i have a pain in my kidney what should i do'
+[2025-11-01 15:43:20] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:43:20] [Orchestrator] Detected intent: medical
+[2025-11-01 15:44:11] [System] Received: patient_name='John Smith' message='what are latest trends of chronic kidney disease'
+[2025-11-01 15:44:11] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:44:11] [Orchestrator] Detected intent: web
+[2025-11-01 15:44:42] [System] Received: patient_name='John Smith' message='what are latest treatments of chronic kidney disease'
+[2025-11-01 15:44:42] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:44:42] [Orchestrator] Detected intent: web
+[2025-11-01 15:54:01] [Reception] Retrieving patient info for: John Smith
+[2025-11-01 15:54:01] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:54:22] [System] Received: patient_name='John Smith' message='Hey how are you'
+[2025-11-01 15:54:22] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:54:22] [Orchestrator] Detected intent: general
+[2025-11-01 15:54:30] [ReceptionistAgent] Responded to the patient: Hey how are you
+[2025-11-01 15:54:53] [System] Received: patient_name='John Smith' message='I have a pain in kidney what should i do'
+[2025-11-01 15:54:53] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:54:53] [Orchestrator] Detected intent: medical
+[2025-11-01 15:55:59] [System] Received: patient_name='John Smith' message='what are the latest treatments for chronic kidney disease in 2025'
+[2025-11-01 15:55:59] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:55:59] [Orchestrator] Detected intent: web
+[2025-11-01 15:56:29] [System] Received: patient_name='John Smith' message='okay thanks'
+[2025-11-01 15:56:29] [PatientDB] ✅ Retrieved record for John Smith
+[2025-11-01 15:56:29] [Orchestrator] Detected intent: general
+[2025-11-01 15:56:34] [ReceptionistAgent] Responded to the patient: okay thanks
